@@ -12,34 +12,25 @@ const Authentication: React.FC = () => {
     return (
         <div className="container">
             <Form
+                layout="vertical"
                 name="login"
                 onFinish={onFinish}
                 className="form"
+
             >
-                <Form.Item
-                    label="Usuário"
-                    name="username"
-                    rules={[{required:true}]}
-                >
-                    <Input/>
+                <Form.Item className="text">
+                    <h2>Acesso Restrito</h2>
                 </Form.Item>
 
                 <Form.Item
-                label="Senha"
-                name="password"
-                rules={[{required:true}]}
+                    name="password"
+                    rules={[{required:true, message:"?"}]}
                 >
-                    <Input.Password/>
+                    <Input.Password className="input-password" />
                 </Form.Item>
 
-                <Form.Item label={null}>
-                    <Button type="primary" htmlType="submit">
-                        Submit
-                    </Button>
-                </Form.Item>
 
             </Form>
-
 
         </div>
     )
