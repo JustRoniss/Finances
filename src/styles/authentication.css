@@ -1,0 +1,23 @@
+.container{
+    width: 70%;
+    display: flex;
+    margin: 3rem auto;
+    justify-content: center;
+    align-content: center;
+}
+
+.form{
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+.text{
+    text-align: center;
+}
+
+.input-password{
+
+    width: 200px;
+}
+
